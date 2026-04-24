@@ -10,7 +10,7 @@ Fine-tune Qwen2.5-7B-Instruct với QLoRA 4-bit để phân loại 20 intent tro
 | Phương pháp | LoRA (r=32, alpha=64) + SFTTrainer |
 | Số classes | 20 intents |
 | Test Accuracy | **95.00%** |
-| Thời gian train | ~574 phút (Kaggle T4) |
+| Thời gian train | ~574 phút (Kaggle T4 x2) |
 
 ## Cấu trúc thư mục
 
@@ -38,10 +38,7 @@ banking-intent-unsloth/
 pip install -r requirements.txt
 ```
 
-> **Lưu ý:** Với môi trường Kaggle, thay dòng `unsloth[colab-new]` trong `requirements.txt` thành:
-> ```
-> unsloth[kaggle-new] @ git+https://github.com/unslothai/unsloth.git
-> ```
+> **Lưu ý:** Cần chạy trên môi trường Kaggle, nếu chạy trên môi trường khác, phải thay đổi nội dung trong file requirement.txt từ kaggle-new thành môi trường phù hợp.
 
 ## Tiền xử lý dữ liệu
 
@@ -73,6 +70,9 @@ bash inference.sh
 python scripts/inference.py configs/inference.yaml sample_data/test.csv
 ```
 
-## Video Demo
+## Video Demo kết quả Inference
 
-[Link Google Drive](https://drive.google.com/your-link-here)
+[Link Google Drive](https://drive.google.com/file/d/1nywHCVcIiSUtQbs06yLV5BviwqP1syCD/view?usp=sharing)
+
+
+
