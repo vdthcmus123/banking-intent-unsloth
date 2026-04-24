@@ -1,0 +1,6 @@
+label_map_path: /kaggle/working/banking-intent-lora/label_map.json
+load_in_4bit: true
+lora_checkpoint: /kaggle/working/banking-intent-lora
+max_new_tokens: 20
+max_seq_length: 512
+model_checkpoint: unsloth/Qwen2.5-7B-Instruct-bnb-4bit
